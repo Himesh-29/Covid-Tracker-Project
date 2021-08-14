@@ -4,3 +4,6 @@ https://openapi.aarogyasetu.gov.in/ I have already registered my account in this
 https://openapi.aarogyasetu.gov.in/getting-started How to use this
 
 https://api.covid19api.com/live/country/india Website which we agreed to use
+
+
+### NOTE: Try to resize the image in carousel, as one of the images, which is a slight bigger than the rest, causes the form to shift down...
