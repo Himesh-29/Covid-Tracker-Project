@@ -16,4 +16,6 @@ https://api.covid19api.com/live/country/india
 
 #### 2) Some designing issues (responsibility according to device size, and very low level designing done)
 
+#### 3) Carousel has become unresponsive, added the fade in and interval functionality in carousel and removed the carousel-indicators class.
+
 ### Suggestion from my side: Insteading of displaying 29 states, shall we create a table on the main home page which will show the cases for each state, rather than user searching a particular states?
