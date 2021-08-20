@@ -22,4 +22,4 @@ https://api.covid19api.com/live/country/india
 
 #### Ayush: Ya, we can do this, but, I suppose, the data of the state which the user wants to search, will be tough for him. Say, the name of the state starts with T (Telangana or TamilNadu), then he will have to search all the way through different states, which would be tideous for him ig... So, I suppose, it would be better if we keep the search functionality... 
 
-### Brw, yeh update kab kiya tune? Mai actually aaj dekh paya hu na, thst's why... Abhi woh github regularly check 
+### Btw, yeh update kab kiya tune? Mai actually aaj dekh paya hu na, thst's why... Abhi woh github regularly check 
