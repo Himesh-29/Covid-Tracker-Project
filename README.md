@@ -19,7 +19,3 @@ https://api.covid19api.com/live/country/india
 #### 3) Carousel has become unresponsive, added the fade in and interval functionality in carousel and removed the carousel-indicators class.
 
 ### Suggestion from my side: Insteading of displaying 29 states, shall we create a table on the main home page which will show the cases for each state, rather than user searching a particular states?
-
-#### Ayush: Ya, we can do this, but, I suppose, the data of the state which the user wants to search, will be tough for him. Say, the name of the state starts with T (Telangana or TamilNadu), then he will have to search all the way through different states, which would be tideous for him ig... So, I suppose, it would be better if we keep the search functionality... 
-
-### Btw, yeh update kab kiya tune? Mai actually aaj dekh paya hu na, that's why... Abhi woh github regularly check nhi kar pa raha hu
