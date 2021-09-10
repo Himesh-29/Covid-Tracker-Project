@@ -1,6 +1,6 @@
 # Covid-Tracker-Project
 
-https://api.covid19api.com/live/country/india
+https://api.rootnet.in/covid19-in/stats/latest
 
 ### NOTE: Try to resize the image in carousel, as one of the images, which is a slight bigger than the rest, causes the form to shift down...
 
