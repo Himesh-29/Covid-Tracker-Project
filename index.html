@@ -11,87 +11,83 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>INDIA COVID19 TRACKER</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body>
-    <table style="margin: 0 auto;">
+
+  <body class="bg-success bg-opacity-10">
+    <!--NAVBAR-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="btn btn-outline-primary fs-6 me-3">
+          INDIA COVID-19 TRACKER
+        </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/searchByState.html">Search by state</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADING -->
+    <table style="margin: 0 auto">
       <tr>
         <td>
           <img
             src="images/corona-virus.jpg"
             height="50px"
             width="50px"
-            style="border-radius: 50%;"
+            style="border-radius: 50%"
             alt="Image not found"
           />
         </td>
         <td>
-          <h1>India Covid-19 tracker</h1>
+          <h1><u>India Covid-19 tracker</u></h1>
         </td>
       </tr>
     </table>
 
     <!--Photos-->
+    <!-- COROUSEL NOT WORKING - SO REMOVED IT-->
+
     <div
-      id="carouselExampleInterval"
-      class="carousel slide carousel-fade"
-      data-bs-ride="carousel"
+      class="container bg-secondary my-5 bg-opacity-50"
+      style="border-radius: 20px"
     >
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img src="images/img1.png" class="d-block w-100" alt="Image 1" />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/img2.jpg" class="d-block w-100" alt="Image 2" />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/img3.jpg" class="d-block w-100" alt="Image 3" />
-        </div>
+      <h2
+        class="container text-black pt-3"
+        id="allStatesHeading"
+        style="margin-left: 20px"
+      ></h2>
+      <div class="container" style="width: fit-content">
+        <div class="row" id="allStatesData"></div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-
-    <div class="form-class">
-      <form action="#" method="POST" id="form-cases">
-        <span id="form-name-of-state">Name of state:<span>
-          <input type="text" list="cars" id="choices"/>
-          <datalist id="cars">
-            <option label="Gujarat" value="Gujarat">Gujarat</option>
-            <option label="Maharashtra" value="Maharashtra">Maharashtra</option>
-            <option label="Delhi" value="Delhi">Delhi</option>
-            <option label="Karnataka" value="Karnataka">Karnataka</option>
-          </datalist>
-        <span
-          ><input type="submit" class="btn btn-outline-light submitBtn" name="Submit">
-        </input></span
-        >
-      </form>
-    </div>
-
-    <div class="search-results"></div>
 
     <script
-      src="images/https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="fetchAllStatesFromAPI.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
