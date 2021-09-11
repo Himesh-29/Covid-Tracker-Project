@@ -26,7 +26,7 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest")
       "ENTIRE CASE LIST";
     for (let i = 0; i < dataOfStates.length; ++i) {
       document.querySelector("#allStatesData").innerHTML += `
-      <div class="card" style="width: 23rem; background-color: rgb(228, 226, 226); margin: 30px">
+      <div class="container card" style="width: 20rem; background-color: rgb(228, 226, 226); margin: 10px">
               <div class="card-body">
                 <h5 class="card-title">${dataOfStates[i].loc}</h5>
               </div>

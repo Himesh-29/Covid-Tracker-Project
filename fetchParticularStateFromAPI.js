@@ -15,7 +15,7 @@ document
         if (dataFromAPI.success !== true) {
           document.querySelector(
             ".search-results"
-          ).innerHTML = `<div class="container fs-3">Server busy!`;
+          ).innerHTML = `<div class="fs-3">Server busy!`;
           return;
         }
         dataFromAPI.data.regional.forEach((eachState) => {
@@ -23,7 +23,9 @@ document
             dataRequire = eachState;
             found = true;
           }
-          if (state.toLowerCase() === eachState.loc.toLowerCase().slice(0, -3)) {
+          if (
+            state.toLowerCase() === eachState.loc.toLowerCase().slice(0, -3)
+          ) {
             dataRequire = eachState;
             found = true;
           }
@@ -31,15 +33,16 @@ document
         if (found === false) {
           document.querySelector(
             ".search-results"
-          ).innerHTML = `<div class="container fs-3">Couldn't find the state, try another one`;
+          ).innerHTML = `<div class="fs-3">Couldn't find the state, try another one`;
         }
         return found;
       })
       .then(function (foundRet) {
         if (foundRet) {
-          document.querySelector(
-            ".search-results"
-          ).innerHTML = `<div class="container">
+          document.querySelector(".navbar-expand-lg").style.width = `${
+            window.screen.width <= 452 ? "452px" : window.screen.width
+          }`;
+          document.querySelector(".search-results").innerHTML = `<div class=">
     <div class="card" style="width: 23rem; background-color: rgb(228, 226, 226); margin: 30px">
     <div class="card-body">
     <h5 class="card-title">${dataRequire?.loc}</h5>
